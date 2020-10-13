@@ -1,6 +1,13 @@
 .card-footer {
   position: relative;
   height: 7vh;
+  background-color: #164653;
+  color: white;
+}
+
+.card-header{
+  background-color: #164653;
+  color: white;
 }
 
 .card-body {
@@ -17,12 +24,14 @@
   right: 60px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
 }
 .dislike {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
 }
 
 .days {
@@ -30,6 +39,7 @@
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
 }
 
 .details-button {
@@ -65,3 +75,21 @@ i {
 h5{
   font-size: 1em;
 }
+
+.text-center{
+  text-align: center;
+  /* color: white; */
+}
+
+.form{
+  padding: 20px;
+  background-color: #164653;
+  border-radius: 10px;
+  color: white;
+}
+
+.title{
+  color: white;
+}
+
+
