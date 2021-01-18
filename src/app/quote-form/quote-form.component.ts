@@ -18,6 +18,9 @@ export class QuoteFormComponent implements OnInit {
       this.newQuote = new Quote(0, '', '', '', new Date());
       form.reset();
     }
+    else{
+      alert("Empty Submission!!")
+    }
    
   }
 
