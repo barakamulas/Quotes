@@ -13,16 +13,16 @@ export class QuoteFormComponent implements OnInit {
   @Output() createQuote = new EventEmitter<Quote>();
 
   addQuote(form: NgForm) {
-      if(newQuote.author == '' || newQuote.author){
-        alert("Empty Submission!");
-      }esle{
-        this.createQuote.emit(this.newQuote);
-        this.newQuote = new Quote(0, '', '', '', new Date());
-        form.reset();
-      }   
+    if (this.newQuote.author == '' || this.newQuote.author) {
+      alert("Empty Submission!");
+    } else {
+      this.createQuote.emit(this.newQuote);
+      this.newQuote = new Quote(0, '', '', '', new Date());
+      form.reset();
+    }
   }
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
